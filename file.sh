@@ -7,8 +7,8 @@ for i in "${flagsArray[@]}"; do
   for k in {1..3}; do
     var1=$(date +%M)
     var2=$(date +%S)
-    echo icpc -std=c++17 -O$k $i LAB3.cpp -o file-$var1-$var2
-    icpc -std=c++17 -O$k $i LAB3.cpp -o file-$var1-$var2
+    echo icpc -std=c++17 -O$k $i bubbleSort.cpp -o file-$var1-$var2
+    icpc -std=c++17 -O$k $i bubbleSort.cpp -o file-$var1-$var2
     echo "$i $k:"
     time ./file-$var1-$var2
   done 
